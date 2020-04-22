@@ -2180,7 +2180,7 @@ img.lozad.loaded {
   left: 0;
   width: 100%;
   z-index: 4;
-  background-color: #2F343B;
+  background-color: #252B32;
   will-change: transform;
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -2215,7 +2215,7 @@ img.lozad.loaded {
   display: none;
 }
 .m-header.with-picture {
-  background-color: #2F343B;
+  background-color: #252B32;
 }
 
 .m-mobile-topbar {
@@ -2237,11 +2237,12 @@ img.lozad.loaded {
   height: 25px;
 }
 .m-logo img {
-  width: auto;
-  max-width: 150px;
-  height: 100%;
+  width: 62px;
+  height: auto;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
+  position: relative;
+  top: -4px;
 }
 .m-logo.in-mobile-topbar {
   height: 20px;
@@ -2400,7 +2401,7 @@ img.lozad.loaded {
     left: 0;
     width: 100%;
     padding: 30px 0 20px 0;
-    background-color: #2F343B;
+    background-color: #252B32;
     border-top: 1px solid #0f0f0f;
     z-index: 5;
     -o-box-shadow: 0 60px 60px rgba(0, 0, 0, var(--submenu-shadow-color-opacity)), 0 0 0 transparent;
