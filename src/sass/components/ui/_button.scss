@@ -22,6 +22,7 @@
   }
 
   &.filled,
+  &.outline,
   &.primary {
     @include bs(0 2px 4px var(--button-shadow-color-normal));
 
@@ -41,10 +42,20 @@
     width: 100%;
   }
 
+  &.outline {
+    color: $white;
+    background-color: transparent;
+    border: 1px solid #404040;
+    margin-left: 10px;
+  }
+
+
   &.primary {
     color: $white;
-    background-color: var(--primary-subtle-color);
+    background-color: $dy-blue;
   }
+
+
 
   &.loading {
     cursor: default;

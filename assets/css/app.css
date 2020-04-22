@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap);@charset "UTF-8";
 /*! sanitize.css v7.0.2 | CC0 License | github.com/csstools/sanitize.css */
 /* Document
  * ========================================================================== */
@@ -541,7 +541,7 @@ textarea,
   --background-color: #fff;
   --primary-foreground-color: #4a4a4a;
   --secondary-foreground-color: #000;
-  --primary-subtle-color: #04aeee;
+  --primary-subtle-color: #146DD9;
   --secondary-subtle-color: #f4f8fd;
   --titles-color: #333;
   --link-color: #293951;
@@ -560,13 +560,13 @@ textarea,
 }
 
 [data-theme=dark] {
-  --background-color: #111;
+  --background-color: #2F343B;
   --primary-foreground-color: #ccc;
   --secondary-foreground-color: #fff;
-  --primary-subtle-color: #2c2fe6;
-  --secondary-subtle-color: #141920;
+  --primary-subtle-color: #146DD9;
+  --secondary-subtle-color: #1E242C;
   --titles-color: #b4b4b4;
-  --link-color: #2c2fe6;
+  --link-color: #146DD9;
   --primary-border-color: #1d1d1d;
   --secondary-border-color: #0f0f0f;
   --article-shadow-normal: 0 4px 5px 5px rgba(0,0,0,0.1);
@@ -583,13 +583,13 @@ textarea,
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme=light]) {
-    --background-color: #111;
+    --background-color: #2F343B;
     --primary-foreground-color: #ccc;
     --secondary-foreground-color: #fff;
-    --primary-subtle-color: #2c2fe6;
-    --secondary-subtle-color: #141920;
+    --primary-subtle-color: #146DD9;
+    --secondary-subtle-color: #1E242C;
     --titles-color: #b4b4b4;
-    --link-color: #2c2fe6;
+    --link-color: #146DD9;
     --primary-border-color: #1d1d1d;
     --secondary-border-color: #0f0f0f;
     --article-shadow-normal: 0 4px 5px 5px rgba(0,0,0,0.1);
@@ -1144,16 +1144,17 @@ img.lozad.loaded {
   }
 }
 .l-post-content p {
+  font-family: "Libre Baskerville", serif;
   letter-spacing: 0.2px;
   line-height: 1.5;
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-bottom: 25px;
 }
 @media only screen and (min-width: 48rem) {
   .l-post-content p {
     letter-spacing: 0.3px;
     line-height: 1.6;
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 30px;
   }
 }
@@ -1168,9 +1169,10 @@ img.lozad.loaded {
   text-decoration: underline;
 }
 .l-post-content ul, .l-post-content ol {
+  font-family: "Libre Baskerville", serif;
   letter-spacing: 0.2px;
   line-height: 1.5;
-  font-size: 1.125rem;
+  font-size: 1rem;
   padding-left: 20px;
   margin: 0 0 20px 0;
 }
@@ -1178,7 +1180,7 @@ img.lozad.loaded {
   .l-post-content ul, .l-post-content ol {
     letter-spacing: 0.3px;
     line-height: 1.6;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding-left: 40px;
     margin-bottom: 30px;
   }
@@ -1650,11 +1652,11 @@ img.lozad.loaded {
   color: var(--titles-color);
   border: 1px solid var(--primary-foreground-color);
 }
-.m-button.filled, .l-post-content button.filled:not(.m-icon-button), .m-button.primary, .l-post-content button.primary:not(.m-icon-button) {
+.m-button.filled, .l-post-content button.filled:not(.m-icon-button), .m-button.outline, .l-post-content button.outline:not(.m-icon-button), .m-button.primary, .l-post-content button.primary:not(.m-icon-button) {
   -o-box-shadow: 0 2px 4px var(--button-shadow-color-normal), 0 0 0 transparent;
   box-shadow: 0 2px 4px var(--button-shadow-color-normal), 0 0 0 transparent;
 }
-.m-button.filled:hover, .l-post-content button.filled:hover:not(.m-icon-button), .m-button.primary:hover, .l-post-content button.primary:hover:not(.m-icon-button) {
+.m-button.filled:hover, .l-post-content button.filled:hover:not(.m-icon-button), .m-button.outline:hover, .l-post-content button.outline:hover:not(.m-icon-button), .m-button.primary:hover, .l-post-content button.primary:hover:not(.m-icon-button) {
   transform: translateY(-2px);
   -o-box-shadow: 0 4px 8px var(--button-shadow-color-hover), 0 0 0 transparent;
   box-shadow: 0 4px 8px var(--button-shadow-color-hover), 0 0 0 transparent;
@@ -1667,9 +1669,15 @@ img.lozad.loaded {
   display: block;
   width: 100%;
 }
+.m-button.outline, .l-post-content button.outline:not(.m-icon-button) {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #404040;
+  margin-left: 10px;
+}
 .m-button.primary, .l-post-content button.primary:not(.m-icon-button) {
   color: #fff;
-  background-color: var(--primary-subtle-color);
+  background-color: #146DD9;
 }
 .m-button.loading, .m-subscribe-section__container.loading .m-button, .l-post-content button.loading:not(.m-icon-button), .m-subscribe-section__container.loading .l-post-content button:not(.m-icon-button), .l-post-content .m-subscribe-section__container.loading button:not(.m-icon-button) {
   cursor: default;
@@ -2172,7 +2180,7 @@ img.lozad.loaded {
   left: 0;
   width: 100%;
   z-index: 4;
-  background-color: var(--background-color);
+  background-color: #2F343B;
   will-change: transform;
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -2207,7 +2215,7 @@ img.lozad.loaded {
   display: none;
 }
 .m-header.with-picture {
-  background-color: var(--background-color);
+  background-color: #2F343B;
 }
 
 .m-mobile-topbar {
@@ -2299,7 +2307,12 @@ img.lozad.loaded {
   font-weight: 600;
 }
 .m-nav__left ul li a {
-  color: inherit;
+  font-weight: 400;
+  color: white;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .m-nav__right {
