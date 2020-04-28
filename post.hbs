@@ -15,7 +15,7 @@ into the {body} of the default.hbs template --}}
     {{> hero background=feature_image}}
     </section>
   {{/post}}
-  
+
   <main>
     <article>
       <div class="l-content in-post">
@@ -36,8 +36,8 @@ into the {body} of the default.hbs template --}}
               <div class="pos-relative js-post-content">
                 <div class="m-share">
                   <div class="m-share__content js-sticky">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute='true'}}" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Facebook">
-                      <span class="icon-facebook"></span>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{url absolute='true'}}&title={{encode title}}" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="LinkedIn">
+                      <span class="icon-linkedin"></span>
                     </a>
                     <a href="https://twitter.com/intent/tweet?text={{encode title}}&url={{url absolute='true'}}" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
                       <span class="icon-twitter"></span>
@@ -128,13 +128,13 @@ into the {body} of the default.hbs template --}}
                       </a>
                     </li>
                   {{/if}}
-                  {{#if primary_author.facebook}}
+                  <!-- {{#if primary_author.facebook}}
                     <li>
                       <a href="https://facebook.com/{{primary_author.facebook}}" target="_blank" rel="noopener" aria-label="Facebook">
                         <span class="icon-facebook"></span>
                       </a>
                     </li>
-                  {{/if}}
+                  {{/if}} -->
                   {{#if primary_author.twitter}}
                     <li>
                       <a href="https://twitter.com/{{primary_author.twitter}}" target="_blank" rel="noopener" aria-label="Twitter">
@@ -173,8 +173,10 @@ into the {body} of the default.hbs template --}}
           </section>
           --}}
         {{/post}}
+
+
         {{!-- Related posts --}}
-        {{#get "posts" limit="3" filter="tags:[{{post.tags}}]+id:-{{post.id}}" include="tags,authors" as |related|}}
+        <!-- {{#get "posts" limit="3" filter="tags:[{{post.tags}}]+id:-{{post.id}}" include="tags,authors" as |related|}}
           <section class="m-recommended">
             <div class="l-wrapper in-recommended">
               <h3 class="m-section-title in-recommended">{{t "Recommended for you"}}</h3>
@@ -186,7 +188,11 @@ into the {body} of the default.hbs template --}}
               </div>
             </div>
           </section>
-        {{/get}}
+        {{/get}} -->
+
+
+
+
       </div>
     </article>
   </main>

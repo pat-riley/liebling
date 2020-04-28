@@ -715,7 +715,7 @@ body {
   min-height: 100vh;
   color: var(--primary-foreground-color);
   font-size: 1rem;
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-display: swap;
   overflow-x: hidden;
   background-color: var(--background-color);
@@ -1051,11 +1051,11 @@ img.lozad.loaded {
 }
 
 .l-content {
-  padding: 40px 0 20px;
+  padding: 40px 0 0px;
 }
 @media only screen and (min-width: 64rem) {
   .l-content {
-    padding: 60px 0 40px;
+    padding: 60px 0 0px;
   }
 }
 
