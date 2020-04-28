@@ -2687,6 +2687,7 @@ _:-ms-fullscreen, :root .m-toggle-darkmode {
 }
 .m-hero.with-picture .m-hero-title {
   color: #fff;
+  font-weight: 500;
 }
 .m-hero.no-picture.in-post {
   display: none;
